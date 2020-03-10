@@ -50,7 +50,13 @@
                  .then(response => {
                     return response.json();                
                  })
-                 .then(data => console.log(data));
+                 .then(data =>{
+                     const resultArray = [];
+                     for(let key in data){
+                         resultArray.push(data[key]);
+                        }
+                        this.users = resultArray;
+                 });
             }
         },
         
