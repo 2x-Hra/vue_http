@@ -4,11 +4,11 @@
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <div class="form-group">
                     <label>UserName</label>
-                    <input class ="form-control" type="text" v-model = "username">
+                    <input class ="form-control" type="text" v-model = "user.username">
                 </div>
                 <div class="form-group">
                     <label>mail</label>
-                    <input class ="form-control" type="text" v-model = "mail">
+                    <input class ="form-control" type="text" v-model = "user.mail">
                 </div>
                 <button class="btn btn-primary">Submit</button>
             </div>
@@ -20,8 +20,11 @@
     export default {
         data() {
             return {
-                user: '',
-                email: ''
+                user: {
+                    username: '',
+                    mail: ''
+
+                }
             }
         },
         
