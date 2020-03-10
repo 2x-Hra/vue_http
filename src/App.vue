@@ -10,7 +10,7 @@
                     <label>mail</label>
                     <input class ="form-control" type="text" v-model = "user.mail">
                 </div>
-                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-primary" @click="submit">Submit</button>
             </div>
         </div>
     </div>
@@ -25,6 +25,11 @@
                     mail: ''
 
                 }
+            };
+        },
+        methods: {
+            submit(){
+                console.log(this.user);
             }
         },
         
