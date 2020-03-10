@@ -48,9 +48,9 @@
             getData(){
                 this.$http.get('https://vue-http-cf4fc.firebaseio.com/data.json')
                  .then(response => {
-                    const data = response.json();
-                    console.log(data);
-                 });
+                    return response.json();                
+                 })
+                 .then(data => console.log(data));
             }
         },
         
