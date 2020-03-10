@@ -11,7 +11,7 @@
                     <input class ="form-control" type="text" v-model = "user.mail">
                 </div>
                 <button class="btn btn-primary" @click="submit">Submit</button>
-            </div>
+            </div>np
         </div>
     </div>
 </template>
