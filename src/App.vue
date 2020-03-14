@@ -38,7 +38,7 @@
         },
         methods: {
             submit(){
-                this.$http.post('https://vue-http-cf4fc.firebaseio.com/data.json',this.user)
+                this.$http.post('',this.user)
                     .then(response => {
                         console.log(response);
                     },error => {
@@ -46,7 +46,7 @@
                     }); 
             },
             getData(){
-                this.$http.get('https://vue-http-cf4fc.firebaseio.com/data.json')
+                this.$http.get('')
                  .then(response => {
                     return response.json();                
                  })
