@@ -33,17 +33,20 @@
                     username: '',
                     mail: ''
 
-                }
+                },
+                users:[],
+                resource:{}
             };
         },
         methods: {
             submit(){
-                this.$http.post('',this.user)
-                    .then(response => {
-                        console.log(response);
-                    },error => {
-                        console.log(error);
-                    }); 
+                // this.$http.post('',this.user)
+                //     .then(response => {
+                //         console.log(response);
+                //     },error => {
+                //         console.log(error);
+                //     }); 
+                this.resource.save({},this.user);
             },
             getData(){
                 this.$http.get('')
